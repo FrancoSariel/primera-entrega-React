@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: url('./assets/mina_side_1-edt_1000px.webp')no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+
+}
