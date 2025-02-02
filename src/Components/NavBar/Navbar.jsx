@@ -1,16 +1,23 @@
 import React from 'react'
 import './Navbar.css'
 import CartWidget from '../CartWidget/CartWidget'
+import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     return (
         <header className="header">
-            <a href="/" className="logo">Castor Suspensiones</a>
+           <Link to="/">
+            <img className='logo' src={"./img.logo.png"} alt='logo'/>
+            </Link>
             <nav className="navbar">
-                <a href="/">Inicio</a>
-                <a href="/">Suspension Neumatica</a>
-                <a href="/">Suspension Regulable</a>
-                <a href="/">Contacto</a>
+                <ul>
+                   <li>
+                    <NavLink to="categoria/Neumatica">Suspension Neumatica</NavLink>
+                   </li>
+                   <li>
+                    <NavLink to="categoria/regulable">Suspension Regulable</NavLink>
+                   </li>
+                </ul>
             </nav>
             <CartWidget/>
         </header>
